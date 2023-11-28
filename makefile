@@ -27,3 +27,10 @@ $(LIBDIR)/%.o: $(LIBDIR)/%.c
 
 clean:
     rm -f $(OBJS) $(LIBOBJS) $(TARGET)
+
+run: hello
+    $(CC) $^ -o $@ $<
+
+# $^ all dependencies
+# $@ target
+# $< first item of dependencies list
