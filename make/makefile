@@ -2,6 +2,9 @@
 # defalut target is first target
 #.PHONY: all say_hello generate list
 # run all target
+cc = gcc
+# make cc=clang
+
 all: say_hello generate  
 say_hello:  
 	@echo "Hello World!"  
