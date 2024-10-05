@@ -1,1 +1,0 @@
-C:\Users\ttft3\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/ttft3/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S D:\workspace\STL -B D:\workspace\STL\cmake-build-debug
