@@ -1,7 +1,9 @@
 #.DEFAULT_GOAL := generate
 # defalut target is first target
-#.PHONY: all say_hello generate list
-# run all target
+#.PHONY: 
+#	all say_hello generate list
+#	clean clear all generated file
+#	run all target
 cc = gcc
 # make cc=clang
 
