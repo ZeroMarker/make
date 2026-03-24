@@ -1,0 +1,2 @@
+mise use -g conan
+
