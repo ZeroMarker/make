@@ -1,20 +1,23 @@
-#.DEFAULT_GOAL := generate
-# defalut target is first target
-#.PHONY: 
-#	all say_hello generate list
-#	clean clear all generated file
-#	run all target
-cc = gcc
-# make cc=clang
+# .DEFAULT_GOAL := generate
+# default target is the first target
 
-all: say_hello generate  
-say_hello:  
-	@echo "Hello World!"  
-generate:  
-	@echo "Creating files"  
-	touch file-{1..5}.txt  
-list:  
-	@echo "Listing files"  
+CC ?= gcc
+# make CC=clang
+
+all: say_hello generate
+
+say_hello:
+	@echo "Hello World!"
+
+generate:
+	@echo "Creating files"
+	touch file-1.txt file-2.txt file-3.txt file-4.txt file-5.txt
+
+list:
+	@echo "Listing files"
 	ls
+
 clean:
-	rm *.txt
+	rm -f file-*.txt
+
+.PHONY: all say_hello generate list clean

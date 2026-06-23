@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 spring --version
 
-sdk install springboot
+# Install with SDKMAN when available:
+# sdk install springboot

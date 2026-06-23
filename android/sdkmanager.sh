@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 # 查看所有可用的包
 sdkmanager --list
 

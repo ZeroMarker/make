@@ -1,7 +1,6 @@
-#ifndef _MAX_H
-#define _MAX_H
-#include <stdio.h>
-int max(int arr[], int n);
+#ifndef MAX_H
+#define MAX_H
+
+int max(const int arr[], int n);
+
 #endif
-
-
