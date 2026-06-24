@@ -1,35 +1,83 @@
 - language: Python
   build_tools:
-    - setuptools
-    - flit
-    - poetry
+    - name: setuptools
+      recommended: true
+      description: Standard Python build tool
+    - name: flit
+      recommended: false
+      description: Simple Python packaging tool
+    - name: poetry
+      recommended: true
+      description: Modern Python packaging and dependency management
   package_managers:
-    - pip
-    - pipenv
-    - poetry
-    - uv
+    - name: pip
+      recommended: true
+      description: Standard Python package installer
+    - name: pipenv
+      recommended: false
+      description: Python packaging tool with virtualenv integration
+    - name: poetry
+      recommended: true
+      description: Python packaging and dependency manager
+    - name: uv
+      recommended: true
+      description: Fast Python package installer written in Rust
   project_managers:
-    - poetry
-    - pdm
-    - hatch
+    - name: poetry
+      recommended: true
+      description: Python project management with dependency resolution
+    - name: pdm
+      recommended: true
+      description: Modern Python package manager with PEP 582 support
+    - name: hatch
+      recommended: false
+      description: Python project management and packaging tool
   compilation_tools:
-    - CPython (interpreter)
-    - Cython
-    - Nuitka
+    - name: CPython (interpreter)
+      recommended: true
+      description: Standard Python implementation
+    - name: Cython
+      recommended: true
+      description: Optimizing static compiler for Python and Cython
+    - name: Nuitka
+      recommended: false
+      description: Python compiler to native code
   package_registries:
-    - PyPI
-    - TestPyPI
+    - name: PyPI
+      recommended: true
+      description: Python Package Index - official repository
+    - name: TestPyPI
+      recommended: true
+      description: Test instance of PyPI for package testing
   install_windows:
-    - python.org installer
-    - Microsoft Store
-    - winget
-    - Chocolatey
+    - name: python.org installer
+      recommended: true
+      description: Official Python installer from python.org
+    - name: Microsoft Store
+      recommended: false
+      description: Python from Microsoft Store (maintained by Microsoft)
+    - name: winget
+      recommended: true
+      description: Windows package manager command-line tool
+    - name: Chocolatey
+      recommended: true
+      description: Windows package manager
   install_unix:
-    - apt (Ubuntu/Debian)
-    - dnf (Fedora)
-    - pacman (Arch)
-    - Homebrew (macOS)
-    - conda
+    - name: apt (Ubuntu/Debian)
+      recommended: true
+      description: Package manager for Debian-based distributions
+    - name: dnf (Fedora)
+      recommended: true
+      description: Package manager for Fedora/RHEL-based distributions
+    - name: pacman (Arch)
+      recommended: true
+      description: Package manager for Arch Linux
+    - name: Homebrew (macOS)
+      recommended: true
+      description: Package manager for macOS
+    - name: conda
+      recommended: false
+      description: Cross-platform package and environment manager
 
 - language: JavaScript / Node.js
   build_tools:
